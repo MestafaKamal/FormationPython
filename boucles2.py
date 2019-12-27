@@ -11,7 +11,7 @@ while admis == False:  # conditions
 
     if moy <= 20 and moy >= 0:
         if moy < 10:
-            print("Ajourné")
+            print("Ajourné(e)")
         else:
             print("Admis")
             admis = True
