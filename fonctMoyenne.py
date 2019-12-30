@@ -1,3 +1,7 @@
+# Ce fichier contient la définition de la fonction moyenne() et qui calcule la
+# moyenne arithmétique d'une liste de nombres.
+
+
 def moyenne(a):
     if isinstance(a, list):
         s = 0
@@ -16,6 +20,9 @@ def moyenne(a):
             print("Il n'y a pas de notes")
     else:
         print("Ce n'est pas une liste")
+
+
+# Utilisation de la fonction moyenne() sur des listes.
 
 
 notes1 = [12.5, 8.5, "15", 13.75, 10, 16.25, 18]
