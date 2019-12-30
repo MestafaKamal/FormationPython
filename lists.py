@@ -59,8 +59,12 @@ for i in liste2:
     if i == "Mardi":
         print("oui mardi existe")
         break
+        # beark permet de faire un arrêt forcé de la boucle.
 
 
 # vider la liste
 liste.clear()
 print(liste)
+
+# https://github.com/MestafaKamal/FormationPython
+
