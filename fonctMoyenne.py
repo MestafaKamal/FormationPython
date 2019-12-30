@@ -20,10 +20,19 @@ def moyenne(a):
 
 notes1 = [12.5, 8.5, "15", 13.75, 10, 16.25, 18]
 notes2 = [14, 15.5, 7.5, 14, 18, 10]
+notes3 = [13.75, 10, 16.25, 18]
 listeMoyenne = []
 
 a = moyenne(notes1)
 
 print("La moyenne des notes est", a)
 print("La moyenne des notes est", moyenne(notes2))
+
+listeMoyenne.append(moyenne(notes1))
+listeMoyenne.append(moyenne(notes2))
+listeMoyenne.append(moyenne(notes3))
+
+print(listeMoyenne)
+
+print("Moyenne de la classe", moyenne(listeMoyenne))
 
