@@ -2,6 +2,7 @@ from fonctions import *
 import math
 
 # Les appels
+
 n = 24
 print("Parité de ", n, " est ", estPaire1(n))
 listerPaires(10)
