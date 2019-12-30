@@ -11,12 +11,25 @@ if len(notes) > 0:
 else:
     print("Il n'y a pas de notes")
 
+notes2 = [14, 15.5, 7.5, 14, 18, 10]
+
+s = 0
+for x in notes2:
+    # s = s + x
+    s += x
+
+# traiter le cas où la liste est vide
+if len(notes2) > 0:
+    print("La moyenne est", s / len(notes))
+else:
+    print("Il n'y a pas de notes")
+
 
 # solution générale, et non recommandée
-try:
-    print("La moyenne est", s / len(notes))
-except:
-    print("y a pas de notes")
+# try:
+#    print("La moyenne est", s / len(notes))
+# except:
+#    print("y a pas de notes")
 
 # Faire un programme qui calcule la moyenne des notes
 # Afficher le résultat suivant:
