@@ -59,8 +59,8 @@ def factorielle(n):
         else:
             f = 1
             for i in range(1, n + 1):
-                # f *= i
-                f = f * i
+                f *= i
+                # f = f * i
 
             return f
     else:
@@ -78,7 +78,6 @@ def factorielle1(n):
                 # f *= i
                 f = f * i
                 i += 1
-
             return f
     else:
         return -1
@@ -110,3 +109,20 @@ def multSix1(a):
         return a % 2 == 0 and a % 3 == 0
     else:
         return False
+
+
+personne1 = ["Kadi", "Dahbia"]
+personne2 = ["Mellas", "Anais"]
+personne3 = ["benramdane", "mustafa", "kamal"]
+personne4 = ["Martin", "George", "Raymond", "Richard"]
+
+
+def initiales(nomPersonne):
+
+    return
+
+
+# D. KADI
+# A. MELLAS
+# M. K. BENRAMDANE
+# G. R. R. MARTIN

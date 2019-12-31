@@ -10,7 +10,6 @@ from fonctions import *
 # C'est une bibliothèque standard qui contient des fonctions mathématiques
 import math
 
-
 # Les appels des fonctions
 
 
