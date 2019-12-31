@@ -118,11 +118,28 @@ personne4 = ["Martin", "George", "Raymond", "Richard"]
 
 
 def initiales(nomPersonne):
+    # récupérer le nom de famille
+    # nom = nomPersonne[0]
 
-    return
+    # print(nom)
+
+    chaine = ""
+    # récupérer les prénoms
+    for i in range(1, len(nomPersonne)):
+        prenom = nomPersonne[i]
+        # print(prenom[0])
+        chaine = chaine + prenom[0].upper() + ". "
+
+    chaine = chaine + nomPersonne[0].upper()
+    # print(chaine)
+    return chaine
+
+
+print(initiales(personne3))
 
 
 # D. KADI
 # A. MELLAS
 # M. K. BENRAMDANE
 # G. R. R. MARTIN
+
