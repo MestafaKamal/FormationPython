@@ -1,5 +1,6 @@
 # Ce finchier contient la définition de différentes fonctions
-
+import random
+import datetime
 
 # fonction qui affiche bonjour avec des paramètres
 def afficherBonjour(a, b):
@@ -111,12 +112,6 @@ def multSix1(a):
         return False
 
 
-personne1 = ["Kadi", "Dahbia"]
-personne2 = ["Mellas", "Anais"]
-personne3 = ["benramdane", "mustafa", "kamal"]
-personne4 = ["Martin", "George", "Raymond", "Richard"]
-
-
 def initiales(nomPersonne):
     # récupérer le nom de famille
     # nom = nomPersonne[0]
@@ -135,11 +130,41 @@ def initiales(nomPersonne):
     return chaine
 
 
-print(initiales(personne3))
+nom = "Mellas"
+prenom = "Anais"
+date = datetime.datetime(2000, 1, 1)
 
 
-# D. KADI
-# A. MELLAS
-# M. K. BENRAMDANE
-# G. R. R. MARTIN
+def passwdGen(n, p, d):
+
+    return n[0:3] + "." + p[0:3] + "." + str(d.day) + str(random.randint(0, 100))
+
+
+print(passwdGen(nom, prenom, date))
+
+
+# random est un module qui contient des foction de génération
+# de nombres aléatoires
+# random.randint() fonction est génère un entier aléatoire dans un intervalle.
+
+
+def passwdGen1(n, p, d):
+    print(nom)
+    s = ""
+    for i in p:
+        s = s + i[0:3].capitalize() + "."
+
+    # return n[0:3].capitalize() + "." + s + d[0:2] + str(random.randint(0, 100))
+    return "{}.{}{}{}".format(n[0:3].capitalize(), s, d[0:2], random.randint(0, 100))
+
+
+d = datetime.datetime(2018, 2, 12)
+
+x = datetime.datetime.now()
+print(x.strftime("On est le %d %B %Y à %H:%M:%S"))
+
+if x < d:
+    print("d n'est pas encore arrivé")
+else:
+    print("c'est une date passée")
 
