@@ -33,6 +33,9 @@ print("longueur", longueur1(notes1))
 a = afficherBonjour("Ahmed", 2)
 print(a)
 
+print("5! =", factorielle2(5))
+
+print(multSix1(12))
 
 # exercice
 # Fonction qui calcule la factorielle d'un nombre

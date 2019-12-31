@@ -51,3 +51,62 @@ def listerPaires(n):
             if estPaire(i):
                 print(i)
 
+
+def factorielle(n):
+    if n >= 0:
+        if n == 0:
+            return 1
+        else:
+            f = 1
+            for i in range(1, n + 1):
+                # f *= i
+                f = f * i
+
+            return f
+    else:
+        return -1
+
+
+def factorielle1(n):
+    if n >= 0:
+        if n == 0:
+            return 1
+        else:
+            f = 1
+            i = 1
+            while i <= n:
+                # f *= i
+                f = f * i
+                i += 1
+
+            return f
+    else:
+        return -1
+
+
+def factorielle2(n):
+    if n >= 0:
+        if n == 0:
+            return 1
+        else:
+            return n * factorielle2(n - 1)
+    else:
+        return -1
+
+
+# Fonction qui indique si un nombre est multiple de six
+# Elle est implémentée avec les expressions logiques
+def multSix(a):
+    if isinstance(a, int) or isinstance(a, float):
+        return a % 6 == 0
+    else:
+        return False
+
+
+# Fonction qui indique si un nombre est multiple de six
+# Elle est implémentée avec les expressions logiques
+def multSix1(a):
+    if isinstance(a, int) or isinstance(a, float):
+        return a % 2 == 0 and a % 3 == 0
+    else:
+        return False
