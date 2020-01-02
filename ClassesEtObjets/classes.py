@@ -10,6 +10,9 @@ class Personne:
     def afficherNom(self):
         print("Je m'appelle", self.nom, self.prenom)
 
+    def afficher(self):
+        print(self.nom, self.prenom)
+
     def modiferNom(self, nouveauNom):
         self.nom = nouveauNom
 
@@ -100,3 +103,5 @@ ens1.afficherModules()
 
 a = ens1.getDiplome()
 print(a)
+
+ens1.afficher()
