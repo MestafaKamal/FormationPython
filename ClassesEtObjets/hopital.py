@@ -1,6 +1,12 @@
+# Dans ce scrpt, nous définisons des classes qui entre en jeu dans la gestion
+# partielle d'un hopital.
+
+
+# importer le module datetime afin de pouvoir manipuler les dates.
 import datetime
 
 
+# Définition de la classe Personne.
 class Personne:
     def __init__(self, nom, prenom, dN):
         self.nom = nom
@@ -14,11 +20,21 @@ class Personne:
         service.ajouterPersonne(self)
 
 
+# Medecin est une classe fille de la classe Personne. Elle hérite de toutes les méthodes et
+# tous les attributs de la classe Personne. Elle a des attributs et des méthodes
+# supplémentaires par rapport à personne. Dans un langage lpus simple, Medecin possède et peut faire
+# tout ce que Personne possède et peut faire, mais pas l'inverse. ( Un médecin est une pesonne, mais
+# une personne n'est pas forcément un médecin)
 class Medecin(Personne):
     def __init__(self, n, p, dN, specialite):
         super().__init__(n, p, dN)
         self.specialite = specialite
 
+    # La méthode afficher() est bien définie dans la classe Personne. Mais on la redéfinit ici pour
+    # qu'elle fasse un traitement différent pour les objets de la classe Medecin. C'est ce qu'on appelle
+    # la surdéfinition.
+    # Dans le cas où la méthode n'est pas redéfinit ici, si un objet Medecin l'appelle, c'est celle définie
+    # dans la classe Personne qui est exécutée. Mais puisqu'elle est redéfinie, c'est celle-ci qui s'exécute.
     def afficher(self):
         print(
             "D. " + self.nom,
