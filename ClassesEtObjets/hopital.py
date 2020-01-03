@@ -32,7 +32,7 @@ class Medecin(Personne):
 
     # La méthode afficher() est bien définie dans la classe Personne. Mais on la redéfinit ici pour
     # qu'elle fasse un traitement différent pour les objets de la classe Medecin. C'est ce qu'on appelle
-    # la surdéfinition.
+    # le polymorphisme
     # Dans le cas où la méthode n'est pas redéfinit ici, si un objet Medecin l'appelle, c'est celle définie
     # dans la classe Personne qui est exécutée. Mais puisqu'elle est redéfinie, c'est celle-ci qui s'exécute.
     def afficher(self):
